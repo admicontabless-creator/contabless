@@ -10,10 +10,10 @@ const PRICING_CONFIG = {
       badge: null,
       price_monthly: "Consultar",
       price_annual: "Consultar",
-      price_note: "por mes + IVA",
+      price_note: "Desde $30.000 por mes",
       description: "Ideal para emprendedores y pequeños negocios que están comenzando.",
       cta_text: "Contactar",
-      cta_link: SITE_CONFIG.WHATSAPP_LINK,
+      cta_link: "https://wa.me/56932514436",
       featured: false,
       features: [
         "Contabilidad mensual",
@@ -21,6 +21,7 @@ const PRICING_CONFIG = {
         "Declaración de renta anual",
         "Libros contables",
         "Soporte vía WhatsApp",
+        "Reunión mensual de 30 min"
       ]
     },
     {
@@ -29,19 +30,20 @@ const PRICING_CONFIG = {
       badge: "Más popular",
       price_monthly: "Consultar",
       price_annual: "Consultar",
-      price_note: "por mes + IVA",
-      description: "Para empresas en crecimiento que necesitan asesoría integral.",
-      cta_text: "Agenda tu reunión",
-      cta_link: SITE_CONFIG.PRIMARY_CTA_LINK,
+      price_note: "Desde $65.000 por mes",
+      description: "Para empresas en crecimiento que necesitan asesoría integral con Recursos Humanos.",
+      cta_text: "Contactar",
+      cta_link: "https://wa.me/56932514436",
       featured: true,
       features: [
         "Todo lo del plan Básico",
-        "Liquidaciones de sueldo",
+        "Liquidaciones de sueldo con cobro adicional dependiendo de la cantidad de trabajadores",
         "Gestión de RRHH",
         "Asesoría tributaria",
         "Planificación financiera",
         "Reunión mensual de revisión",
         "Soporte prioritario",
+        "Conciliación bancaria"
       ]
     },
     {
@@ -50,10 +52,10 @@ const PRICING_CONFIG = {
       badge: null,
       price_monthly: "A medida",
       price_annual: "A medida",
-      price_note: "cotización personalizada",
+      price_note: "Cotización personalizada",
       description: "Solución completa para empresas con necesidades específicas.",
       cta_text: "Hablar con nosotras",
-      cta_link: SITE_CONFIG.WHATSAPP_LINK,
+      cta_link: "https://wa.me/56932514436",
       featured: false,
       features: [
         "Todo lo del plan Profesional",
@@ -62,7 +64,7 @@ const PRICING_CONFIG = {
         "Gestión tributaria avanzada",
         "Contador dedicado",
         "Informes financieros personalizados",
-        "Atención preferencial 24/7",
+        "Atención preferencial 24/7"
       ]
     }
   ]
