@@ -475,14 +475,18 @@ section { padding: 96px 0; }
 .proceso-layout {
   display: grid;
   grid-template-columns: 5fr 3fr;
-  gap: 40px;
+  gap: 8px;
   align-items: center;
   margin-top: 52px;
+}
+.proceso-img {
+  display: flex;
+  justify-content: flex-end;
 }
 .proceso-img img {
   width: 100%;
   max-width: 600px;
-  margin: 24px 0 0 -16px;
+  margin-top: 24px;
   filter: drop-shadow(0 16px 48px rgba(109,40,217,.15));
 }
 .proceso-steps { display: flex; flex-direction: column; gap: 32px; }
