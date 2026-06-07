@@ -327,7 +327,6 @@ section { padding: 96px 0; }
   width: 100%;
   filter: drop-shadow(0 20px 60px rgba(109,40,217,.18));
   border-radius: var(--radius-xl);
-  transform: scaleX(-1);
 }
 .floating-card {
   position: absolute;
