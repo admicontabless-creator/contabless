@@ -474,14 +474,15 @@ section { padding: 96px 0; }
 #proceso { background: var(--gray-100, #f9fafb); }
 .proceso-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 5fr 3fr;
+  gap: 40px;
   align-items: center;
   margin-top: 52px;
 }
 .proceso-img img {
   width: 100%;
-  max-width: 480px;
+  max-width: 700px;
+  margin: 36px 0 0 -20px;
   filter: drop-shadow(0 16px 48px rgba(109,40,217,.15));
 }
 .proceso-steps { display: flex; flex-direction: column; gap: 32px; }
