@@ -14,7 +14,7 @@ const SITE_CONFIG = {
   PHONE: "+56 9 3251 4436",
   LOCATION: "Santiago, Chile",
 
-  INSTAGRAM: "https://www.instagram.com/contabless/",
+  INSTAGRAM: "https://www.instagram.com/contabless_oficial?igsh=MXZhOWhvazF1bDV0Yw%3D%3D&utm_source=qr",
   LINKEDIN: "#",
   FACEBOOK: "#",
 
