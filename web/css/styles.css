@@ -321,6 +321,7 @@ section { padding: 96px 0; }
   position: relative;
   width: 100%;
   max-width: 480px;
+  transform: translateX(-48px);
 }
 .hero-img-wrap img {
   width: 100%;
