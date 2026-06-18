@@ -781,6 +781,200 @@ section { padding: 96px 0; }
 }
 .price-card .btn { width: 100%; justify-content: center; }
 
+/* ===== SECTION: INSTAGRAM CTA ===== */
+.ig-cta-section {
+  background: var(--white);
+  padding: 64px 0;
+  border-top: 1px solid var(--gray-200);
+}
+.ig-cta-section .container { text-align: center; }
+.ig-cta-lead {
+  font-size: 16px;
+  color: var(--gray-600);
+  margin: 0 auto 32px;
+  max-width: 440px;
+  line-height: 1.65;
+}
+.ig-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 36px;
+  background: linear-gradient(135deg, var(--purple-900) 0%, var(--purple-600) 100%);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 99px;
+  text-decoration: none;
+  transition: transform .25s ease, box-shadow .25s ease;
+  box-shadow: 0 6px 28px rgba(92,43,115,.35);
+}
+.ig-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 44px rgba(92,43,115,.45);
+}
+.ig-btn-icon-wrap {
+  width: 38px;
+  height: 38px;
+  background: rgba(255,255,255,.18);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,.25);
+}
+
+/* ===== SECTION: PROGRAMA DE REFERIDOS ===== */
+.referidos-section {
+  background: var(--purple-50);
+  padding: 80px 0;
+}
+.referidos-card {
+  background: linear-gradient(135deg, var(--purple-900) 0%, var(--purple-700) 55%, var(--purple-500) 100%);
+  border-radius: var(--radius-xl);
+  padding: 60px 64px;
+  position: relative;
+  overflow: hidden;
+}
+.referidos-deco {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,.06);
+  pointer-events: none;
+}
+.referidos-deco-1 { width: 420px; height: 420px; top: -160px; right: -60px; }
+.referidos-deco-2 { width: 260px; height: 260px; bottom: -90px; left: 40%; }
+.referidos-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+.referidos-left { flex: 1; }
+.referidos-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.75);
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.22);
+  padding: 5px 14px;
+  border-radius: 99px;
+  margin-bottom: 20px;
+}
+.referidos-title {
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.referidos-desc {
+  font-size: 16px;
+  color: rgba(255,255,255,.78);
+  line-height: 1.65;
+  margin-bottom: 24px;
+  max-width: 460px;
+}
+.referidos-desc strong { color: var(--white); font-weight: 700; }
+.referidos-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.referidos-bullets li {
+  font-size: 14px;
+  color: rgba(255,255,255,.85);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.55;
+}
+.referidos-check {
+  width: 20px;
+  height: 20px;
+  background: rgba(255,255,255,.18);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.referidos-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 30px;
+  background: var(--white);
+  color: var(--purple-700);
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,.18);
+  transition: transform .25s, box-shadow .25s;
+}
+.referidos-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(0,0,0,.22);
+}
+.referidos-right { flex-shrink: 0; }
+.referidos-reward-card {
+  background: rgba(255,255,255,.12);
+  border: 1.5px solid rgba(255,255,255,.22);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  text-align: center;
+  min-width: 210px;
+}
+.referidos-reward-icon-wrap {
+  width: 72px;
+  height: 72px;
+  background: rgba(255,255,255,.15);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.referidos-reward-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: rgba(255,255,255,.6);
+  margin-bottom: 8px;
+}
+.referidos-reward-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+.referidos-reward-sub {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,.65);
+}
+@media (max-width: 768px) {
+  .referidos-card { padding: 40px 28px; }
+  .referidos-inner { flex-direction: column; gap: 32px; }
+  .referidos-right { width: 100%; }
+  .referidos-reward-card { min-width: unset; }
+}
+
 /* ===== SECTION: CTA FINAL ===== */
 #contacto {
   background: linear-gradient(135deg, var(--purple-800) 0%, var(--purple-600) 50%, var(--purple-500) 100%);
