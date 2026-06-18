@@ -46,21 +46,10 @@ function initPricing() {
   const grid = document.getElementById('pricing-grid');
   if (!grid) return;
 
-  let isAnnual = false;
-
-  const toggle = document.getElementById('pricing-toggle');
-  toggle?.addEventListener('click', () => {
-    isAnnual = !isAnnual;
-    toggle.classList.toggle('active', isAnnual);
-    renderPricing();
-  });
-
   function renderPricing() {
     grid.innerHTML = PRICING_CONFIG.plans.map(plan => {
-      const price = isAnnual ? plan.price_annual : plan.price_monthly;
-      const note = isAnnual && plan.price_monthly !== 'Consultar' && plan.price_monthly !== 'A medida'
-        ? 'por mes + IVA (anual)'
-        : plan.price_note;
+      const price = plan.price_monthly;
+      const note = plan.price_note;
 
       return `
       <div class="price-card ${plan.featured ? 'featured' : ''}" data-aos="fade-up">

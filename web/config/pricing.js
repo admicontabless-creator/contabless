@@ -1,15 +1,10 @@
 const PRICING_CONFIG = {
-  toggle_label_monthly: "Mensual",
-  toggle_label_annual: "Anual",
-  annual_discount_text: "Ahorra 20%",
-
   plans: [
     {
       id: "basico",
       name: "Básico",
       badge: null,
       price_monthly: "Consultar",
-      price_annual: "Consultar",
       price_note: "Desde $30.000 por mes",
       description: "Ideal para emprendedores y pequeños negocios que están comenzando.",
       cta_text: "Contactar",
@@ -29,7 +24,6 @@ const PRICING_CONFIG = {
       name: "Profesional",
       badge: "Más popular",
       price_monthly: "Consultar",
-      price_annual: "Consultar",
       price_note: "Desde $65.000 por mes",
       description: "Para empresas en crecimiento que necesitan asesoría integral con Recursos Humanos.",
       cta_text: "Contactar",
@@ -51,7 +45,6 @@ const PRICING_CONFIG = {
       name: "Premium",
       badge: null,
       price_monthly: "A medida",
-      price_annual: "A medida",
       price_note: "Cotización personalizada",
       description: "Solución completa para empresas con necesidades específicas.",
       cta_text: "Hablar con nosotras",
