@@ -93,37 +93,35 @@ function initSiteConfig() {
   });
 }
 
-/* ===== SERVICES ACCORDION ===== */
+/* ===== SERVICES GRID + EXPANDABLE PANEL ===== */
 function initServicesAccordion() {
-  const container = document.getElementById('services-accordion');
+  const container = document.getElementById('services-container');
   if (!container || typeof SERVICES_CONFIG === 'undefined') return;
 
   container.innerHTML = SERVICES_CONFIG.map(s => `
-    <div class="accordion-item" id="accordion-${s.id}">
-      <button class="accordion-header" aria-expanded="false" aria-controls="body-${s.id}">
-        <div class="accordion-header-left">
-          <span class="accordion-icon-wrap">${s.icon}</span>
-          <span class="accordion-title">${s.name}</span>
-        </div>
-        <span class="accordion-chevron">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-        </span>
+    <div class="service-card" id="svc-${s.id}">
+      <div class="service-icon">${s.icon}</div>
+      <div class="service-name">${s.name}</div>
+      <div class="service-desc">${s.shortDesc}</div>
+      <button class="service-detail-btn" aria-expanded="false" aria-controls="svc-panel-${s.id}">
+        Ver detalle
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
-      <div class="accordion-body" id="body-${s.id}" role="region">
-        <div class="accordion-content">
-          <p class="accordion-intro">${s.intro}</p>
-          <p class="accordion-process-label">Proceso detallado</p>
-          <ol class="accordion-steps">
+      <div class="service-detail-panel" id="svc-panel-${s.id}">
+        <div class="service-detail-content">
+          <p class="service-detail-intro">${s.intro}</p>
+          <p class="service-detail-label">Proceso detallado</p>
+          <ol class="service-detail-steps">
             ${s.steps.map((step, j) => `
-              <li class="accordion-step">
-                <span class="accordion-step-num">${j + 1}</span>
-                <span class="accordion-step-body">
-                  <span class="accordion-step-title">${step.title}</span>
-                  <span class="accordion-step-desc">${step.desc}</span>
+              <li class="service-detail-step">
+                <span class="service-step-num">${j + 1}</span>
+                <span class="service-step-body">
+                  <span class="service-step-title">${step.title}</span>
+                  <span class="service-step-desc">${step.desc}</span>
                 </span>
               </li>`).join('')}
           </ol>
-          <div class="accordion-note">
+          <div class="service-note">
             <strong>Nota Importante:</strong> ${s.note}
           </div>
         </div>
@@ -132,17 +130,12 @@ function initServicesAccordion() {
   `).join('');
 
   container.addEventListener('click', e => {
-    const header = e.target.closest('.accordion-header');
-    if (!header) return;
-    const item = header.closest('.accordion-item');
-    const isOpen = item.classList.contains('open');
-    container.querySelectorAll('.accordion-item').forEach(i => {
-      i.classList.remove('open');
-      i.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
-    });
-    if (!isOpen) {
-      item.classList.add('open');
-      header.setAttribute('aria-expanded', 'true');
-    }
+    const btn = e.target.closest('.service-detail-btn');
+    if (!btn) return;
+    const card = btn.closest('.service-card');
+    const isOpen = card.classList.contains('open');
+    card.classList.toggle('open', !isOpen);
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    btn.childNodes[0].textContent = isOpen ? 'Ver detalle' : 'Ocultar detalle';
   });
 }

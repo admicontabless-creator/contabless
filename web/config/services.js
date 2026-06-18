@@ -3,6 +3,7 @@ const SERVICES_CONFIG = [
     id: "contabilidad",
     name: "Contabilidad",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>`,
+    shortDesc: "Llevamos tus libros contables al día, con reportes mensuales claros y en tiempo real. Sin errores, sin retrasos.",
     intro: "Llevar un control financiero riguroso es el pilar fundamental para el crecimiento de cualquier negocio. Nuestro objetivo es encargarnos de toda la gestión contable de su empresa, procesando su información financiera de manera oportuna para que usted cuente con reportes mensuales claros y precisos, permitiéndole tomar decisiones estratégicas basadas en datos reales y sin retrasos.",
     steps: [
       { title: "Procesamiento y Registro de Documentación", desc: "Clasificaremos y registraremos mensualmente todas sus facturas de compra, venta, boletas de honorarios y rendiciones de gastos en softwares contables especializados, garantizando el orden y el cumplimiento normativo." },
@@ -16,6 +17,7 @@ const SERVICES_CONFIG = [
     id: "tributacion",
     name: "Tributación",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>`,
+    shortDesc: "Declaraciones de IVA, renta, PPM y todas las obligaciones tributarias con el SII. Sin multas, sin sorpresas.",
     intro: "El cumplimiento tributario ante el Servicio de Impuestos Internos (SII) exige precisión y constante actualización ante los cambios legales. Nos encargamos de gestionar de forma integral todas las obligaciones impositivas de su empresa, mitigando riesgos regulatorios y optimizando su carga fiscal para asegurar una operación transparente, sin multas y sin sorpresas.",
     steps: [
       { title: "Declaración Mensual de Impuestos (Formulario 29)", desc: "Calcularemos y presentaremos mes a mes su IVA, Retenciones de Honorarios, Impuesto Único de Segunda Categoría y los Pagos Provisionales Mensuales (PPM) optimizados." },
@@ -29,6 +31,7 @@ const SERVICES_CONFIG = [
     id: "rrhh",
     name: "Recursos Humanos",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+    shortDesc: "Gestión integral de RRHH: contratos, finiquitos, AFP, isapres y toda la documentación laboral en regla.",
     intro: "La gestión del talento humano requiere un equilibrio perfecto entre la normativa laboral vigente y el bienestar de su equipo. Nos encargamos de la administración completa del ciclo laboral de sus colaboradores, resguardando la seguridad jurídica de su empresa ante la Dirección del Trabajo y asegurando que toda la documentación esté rigurosamente en regla.",
     steps: [
       { title: "Confección de Contratos y Anexos de Trabajo", desc: "Redactaremos los contratos de trabajo iniciales, anexos por actualizaciones de sueldo o cargo, y pactos de horas extraordinarias de acuerdo a la legislación laboral chilena." },
@@ -42,6 +45,7 @@ const SERVICES_CONFIG = [
     id: "remuneraciones",
     name: "Remuneraciones",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
+    shortDesc: "Liquidaciones de sueldo, cálculo de imposiciones y pagos previsionales. Paga a tu equipo correcto y a tiempo.",
     intro: "Garantizar que su equipo reciba sus remuneraciones de forma correcta y a tiempo es clave para mantener un clima laboral óptimo y productivo. Nuestro servicio se enfoca en el cálculo preciso de las liquidaciones de sueldo y el procesamiento de todas las cotizaciones previsionales, asegurando transparencia absoluta para sus trabajadores y cumplimiento total ante las entidades fiscalizadoras.",
     steps: [
       { title: "Cálculo de Liquidaciones de Sueldo", desc: "Procesaremos mensualmente los sueldos base, gratificaciones legales, horas extras, bonos, asignaciones no imponibles (colación, movilización) y los descuentos legales correspondientes." },
@@ -55,6 +59,7 @@ const SERVICES_CONFIG = [
     id: "constitucion",
     name: "Constitución de Empresas",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`,
+    shortDesc: "Te acompañamos en todo el proceso de crear tu empresa: tipo societario, estatutos, RUT, inicio de actividades.",
     intro: "Sabemos que iniciar un nuevo proyecto requiere tiempo y energía. Por ello, nuestro objetivo es acompañarle en cada etapa de la formalización de su negocio, encargándonos de la gestión legal y tributaria para que su empresa comience a operar en regla y sin contratiempos.",
     steps: [
       { title: "Asesoría y Redacción de Estatutos", desc: "Definiremos juntos el tipo de sociedad que más le conviene (SpA, EIRL, etc.) y redactaremos el documento legal en el portal oficial, especificando el capital, los giros y las reglas de administración de su negocio." },
@@ -70,6 +75,7 @@ const SERVICES_CONFIG = [
     id: "modificaciones",
     name: "Modificaciones Societarias",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>`,
+    shortDesc: "Realizamos cambios societarios como ingreso o salida de socios, compra de acciones, aumentos de capital y modificaciones legales.",
     intro: "A medida que los negocios escalan, sus estructuras legales deben adaptarse. Ya sea por el ingreso de nuevos inversionistas, la salida de socios, o un aumento de capital para financiar la expansión, le acompañamos en la reestructuración formal de su sociedad. Gestionamos todas las modificaciones legales para que sus acuerdos corporativos queden firmes, vigentes y registrados adecuadamente.",
     steps: [
       { title: "Asesoría Estratégica y Redacción de Modificaciones", desc: "Evaluaremos el impacto legal y tributario del cambio solicitado, redactando el borrador del acta de junta extraordinaria o la modificación de estatutos en el sistema correspondiente." },
@@ -83,6 +89,7 @@ const SERVICES_CONFIG = [
     id: "asesoria-financiera",
     name: "Asesoría Financiera",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>`,
+    shortDesc: "Planificación, proyecciones y estrategia financiera para que tomes decisiones de negocio basadas en datos reales.",
     intro: "Tomar decisiones basándose únicamente en el saldo de la cuenta bancaria puede poner en riesgo el futuro de su empresa. Nuestro servicio de asesoría financiera le proporciona una visión profunda y proyectada de su negocio. A través de un análisis técnico de sus estados financieros y flujos de caja, diseñamos estrategias para maximizar la rentabilidad, controlar los costos y planificar el crecimiento de forma sostenible.",
     steps: [
       { title: "Diagnóstico Financiero Integral", desc: "Analizaremos en profundidad la estructura de costos, márgenes de ganancia, ratios de liquidez y endeudamiento actual de su empresa para identificar ineficiencias." },
@@ -96,6 +103,7 @@ const SERVICES_CONFIG = [
     id: "termino-giro",
     name: "Término de Giro",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M9 14l2 2 4-4"/></svg>`,
+    shortDesc: "Cerramos formalmente tu empresa ante el SII, revisando obligaciones pendientes y realizando todo el proceso tributario.",
     intro: "El cierre formal de una etapa empresarial debe ejecutarse con la misma rigurosidad que su inicio. El proceso de Término de Giro ante el Servicio de Impuestos Internos consiste en dar aviso oficial del cese de actividades comerciales de la empresa. Nos encargamos de auditar sus obligaciones pendientes, confeccionar los balances de cierre y realizar toda la tramitación fiscal para asegurar la extinción legal de la sociedad de forma limpia y definitiva.",
     steps: [
       { title: "Auditoría Previa y Diagnóstico de Cumplimiento", desc: "Revisaremos el historial de la empresa en el SII para detectar declaraciones pendientes, giros no declarados, deudas tributarias o contingencias que puedan frenar el cierre." },
@@ -109,6 +117,7 @@ const SERVICES_CONFIG = [
     id: "conciliacion",
     name: "Conciliación Bancaria",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>`,
+    shortDesc: "Revisamos y conciliamos tus movimientos bancarios para mantener tu contabilidad correcta, ordenada y sin diferencias.",
     intro: "La contabilidad de una empresa debe reflejar con total exactitud la realidad de sus cuentas corrientes. Nuestro servicio de Conciliación Bancaria consiste en el cruce minucioso y sistemático entre los registros de sus libros contables y las cartolas reales de sus bancos. De esta forma, identificamos de inmediato depósitos no identificados, cheques por cobrar, duplicidades o comisiones bancarias omitidas, manteniendo un control financiero impecable y transparente.",
     steps: [
       { title: "Descarga y Centralización de Cartolas Bancarias", desc: "Recopilaremos mensualmente los movimientos de todas las cuentas corrientes, tarjetas de crédito empresariales y cuentas de ahorro de la sociedad." },
