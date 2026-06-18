@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initMobileMenu();
   initPricing();
-  initTestimonios();
+  initServicesAccordion();
   initSiteConfig();
 });
 
@@ -93,35 +93,56 @@ function initSiteConfig() {
   });
 }
 
-/* ===== TESTIMONIOS CAROUSEL ===== */
-function initTestimonios() {
-  const inner = document.querySelector('.testimonios-inner');
-  const dots = document.querySelectorAll('.testi-dot');
-  if (!inner || !dots.length) return;
+/* ===== SERVICES ACCORDION ===== */
+function initServicesAccordion() {
+  const container = document.getElementById('services-accordion');
+  if (!container || typeof SERVICES_CONFIG === 'undefined') return;
 
-  const cards = inner.querySelectorAll('.testi-card');
-  let current = 0;
-  let perView = window.innerWidth > 900 ? 3 : window.innerWidth > 600 ? 2 : 1;
-  let maxIndex = Math.max(0, cards.length - perView);
-  let timer;
+  container.innerHTML = SERVICES_CONFIG.map(s => `
+    <div class="accordion-item" id="accordion-${s.id}">
+      <button class="accordion-header" aria-expanded="false" aria-controls="body-${s.id}">
+        <div class="accordion-header-left">
+          <span class="accordion-icon-wrap">${s.icon}</span>
+          <span class="accordion-title">${s.name}</span>
+        </div>
+        <span class="accordion-chevron">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </span>
+      </button>
+      <div class="accordion-body" id="body-${s.id}" role="region">
+        <div class="accordion-content">
+          <p class="accordion-intro">${s.intro}</p>
+          <p class="accordion-process-label">Proceso detallado</p>
+          <ol class="accordion-steps">
+            ${s.steps.map((step, j) => `
+              <li class="accordion-step">
+                <span class="accordion-step-num">${j + 1}</span>
+                <span class="accordion-step-body">
+                  <span class="accordion-step-title">${step.title}</span>
+                  <span class="accordion-step-desc">${step.desc}</span>
+                </span>
+              </li>`).join('')}
+          </ol>
+          <div class="accordion-note">
+            <strong>Nota Importante:</strong> ${s.note}
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join('');
 
-  function go(idx) {
-    current = Math.max(0, Math.min(idx, maxIndex));
-    const cardW = cards[0]?.offsetWidth || 300;
-    const gap = 24;
-    inner.style.transform = `translateX(-${current * (cardW + gap)}px)`;
-    dots.forEach((d, i) => d.classList.toggle('active', i === current));
-  }
-
-  dots.forEach((dot, i) => dot.addEventListener('click', () => { go(i); resetTimer(); }));
-
-  function autoPlay() { go(current < maxIndex ? current + 1 : 0); }
-  function resetTimer() { clearInterval(timer); timer = setInterval(autoPlay, 4000); }
-  resetTimer();
-
-  window.addEventListener('resize', () => {
-    perView = window.innerWidth > 900 ? 3 : window.innerWidth > 600 ? 2 : 1;
-    maxIndex = Math.max(0, cards.length - perView);
-    go(0);
+  container.addEventListener('click', e => {
+    const header = e.target.closest('.accordion-header');
+    if (!header) return;
+    const item = header.closest('.accordion-item');
+    const isOpen = item.classList.contains('open');
+    container.querySelectorAll('.accordion-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      header.setAttribute('aria-expanded', 'true');
+    }
   });
 }
