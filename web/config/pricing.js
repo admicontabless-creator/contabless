@@ -13,7 +13,6 @@ const PRICING_CONFIG = {
       features: [
         "Contabilidad mensual",
         "Declaración IVA (F29)",
-        "Declaración de renta anual",
         "Libros contables",
         "Soporte vía WhatsApp",
         "Reunión mensual de 30 min"
