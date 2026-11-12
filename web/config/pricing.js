@@ -14,8 +14,7 @@ const PRICING_CONFIG = {
         "Contabilidad mensual",
         "Declaración IVA (F29)",
         "Libros contables",
-        "Soporte vía WhatsApp",
-        "Reunión mensual de 30 min"
+        "Soporte vía WhatsApp"
       ]
     },
     {
@@ -30,13 +29,13 @@ const PRICING_CONFIG = {
       featured: true,
       features: [
         "Todo lo del plan Básico",
-        "Liquidaciones de sueldo con cobro adicional dependiendo de la cantidad de trabajadores",
+        "2 Liquidaciones de sueldo (cobro adicional por trabajador)",
         "Gestión de RRHH",
         "Asesoría tributaria",
         "Planificación financiera",
         "Reunión mensual de revisión",
-        "Soporte prioritario",
-        "Conciliación bancaria"
+        "Soporte prioritario vía WhatsApp",
+        "Conciliación bancaria (de 0 a 50 movimientos)"
       ]
     },
     {
