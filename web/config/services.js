@@ -86,6 +86,20 @@ const SERVICES_CONFIG = [
     note: "Los costos asociados a notarías, firmas electrónicas avanzadas ajenas a nuestro proveedor estándar, o derechos de inscripción en el Conservador de Bienes Raíces (si aplican) son de cargo exclusivo del cliente."
   },
   {
+    id: "inscripcion-marca",
+    name: "Inscripción de Marca en INAPI",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>`,
+    shortDesc: "Registramos el nombre y el logo de tu negocio ante INAPI para que tu marca quede protegida legalmente y nadie más pueda usarla.",
+    intro: "La marca es uno de los activos más valiosos de su negocio, y registrarla es la única forma de asegurar que nadie más pueda usar su nombre o su logo en el mercado. Nos encargamos de todo el proceso de inscripción ante el Instituto Nacional de Propiedad Industrial (INAPI), para que su marca quede protegida legalmente y usted pueda enfocarse en hacer crecer su empresa.",
+    steps: [
+      { title: "Búsqueda Previa de Marcas Similares", desc: "Revisaremos en la base de datos de INAPI si existen marcas idénticas o parecidas a la suya, para evaluar las posibilidades reales de que su solicitud sea aceptada antes de iniciar el trámite." },
+      { title: "Definición de Clases y Preparación de la Solicitud", desc: "Le asesoraremos para elegir las clases que corresponden a los productos o servicios de su negocio y prepararemos toda la documentación necesaria para presentar la solicitud." },
+      { title: "Presentación de la Solicitud ante INAPI", desc: "Ingresaremos la solicitud de registro de su marca en la plataforma oficial de INAPI y le entregaremos el comprobante de ingreso." },
+      { title: "Seguimiento del Trámite hasta la Resolución", desc: "Realizaremos el seguimiento del proceso durante las distintas etapas (revisión de forma, publicación y examen de fondo) y le informaremos oportunamente cada avance hasta obtener la resolución final." }
+    ],
+    note: "Las tasas que cobra INAPI por el registro son de cargo del cliente y se pagan por separado a nuestros honorarios. Además, la aprobación final depende exclusivamente de INAPI, y cualquier oposición presentada por terceros o respuesta a observaciones de fondo se evalúa y cotiza de manera independiente."
+  },
+  {
     id: "asesoria-financiera",
     name: "Asesoría Financiera",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>`,
